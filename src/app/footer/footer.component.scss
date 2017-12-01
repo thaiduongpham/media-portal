@@ -1,0 +1,15 @@
+@import '../sass/core/main';
+
+footer {
+  background: $dark-gray;
+  color: $white;
+  padding: 15px 0;
+}
+
+.mp-footer {  
+  &__copyright {
+    border-top: 1px solid;
+    padding-top: 7px;
+    font-size: $font-s;
+  }
+}

@@ -1,0 +1,58 @@
+<div class="top-header">
+  <div class="container">
+    <h2 class="mp-header__top">MediaPortal</h2>
+  </div>
+</div>
+<header class="pd-header">
+    <nav class="navbar bg-primary">
+      <div class="container">
+        <div class="navbar-header">
+          <button 
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse" 
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+            (click)="isShow = !isShow;">
+                  <span class="sr-only">Toggle nav</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+        </div>
+        
+        <div id="navbar"
+          class="navbar-collapse collapse"
+          [class.show]="isShow">
+          <ul class="nav navbar-nav navbar-left">
+            <li routerLinkActive="active">
+              <a routerLink="/menu">
+                <span class="fa fa-youtube"></span>
+                <span class="">youtube</span>
+            </a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/about">
+                <span class="fa fa-facebook"></span>
+                <span class="">facebook</span>
+              </a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/contact">
+                <span class="fa fa-twitter"></span>
+                <span class="">twitter</span>
+              </a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/contact">
+                <span class="fa fa-sun-o"></span>
+                <span class="">weather</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
